@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Interview Prep</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">🤖</div>
+  <h1>AI <span>Interview</span> Prep</h1>
+</header>
+
+<main>
+
+  <!-- Topic -->
+  <div class="section-title">Choose Topic</div>
+  <div class="topics">
+    <button class="topic-btn active" data-topic="Java"><span class="icon">☕</span> Java</button>
+    <button class="topic-btn" data-topic="DSA"><span class="icon">🌲</span> DSA</button>
+    <button class="topic-btn" data-topic="Web Development"><span class="icon">🌐</span> Web Dev</button>
+    <button class="topic-btn" data-topic="System Design"><span class="icon">🏗️</span> System Design</button>
+    <button class="topic-btn" data-topic="Python"><span class="icon">🐍</span> Python</button>
+  </div>
+
+  <!-- Difficulty -->
+  <div class="section-title">Difficulty</div>
+  <div class="diff-row">
+    <button class="diff-btn easy active" data-diff="Easy">🟢 Easy</button>
+    <button class="diff-btn med" data-diff="Medium">🟡 Medium</button>
+    <button class="diff-btn hard" data-diff="Hard">🔴 Hard</button>
+  </div>
+
+  <!-- Generate -->
+  <button class="gen-btn" id="genBtn">
+    <span>⚡</span> Generate Interview Questions
+  </button>
+
+  <!-- Output -->
+  <div id="output">
+    <div class="empty">
+      <div class="big">🎯</div>
+      <h2>Ready to Ace Your Interview?</h2>
+      <p>Select a topic & difficulty, then hit Generate!</p>
+    </div>
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
