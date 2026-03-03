@@ -1,55 +1,99 @@
-# AI Chat Server
+# 🍞 AI Chat Server
 
-A simple Node.js server that connects your chat frontend to the Claude AI API.
+> Simple Node.js + Claude AI chat app — setup karo 3 minutes mein!
 
-## Files
+---
 
-```
-project/
-├── index.html    # Chat UI
-└── server.js     # Backend server
-```
+## 📁 Files
 
-## Requirements
+| File | Kya karta hai |
+|---|---|
+| `index.html` | Chat ka UI (frontend) |
+| `server.js` | Backend server |
 
-- Node.js installed
-- Anthropic API key
+---
 
-## Setup
+## ✅ Kya chahiye?
 
-**1. Add your API key in `server.js`**
+- ✔️ Node.js (nodejs.org se download karo)
+- ✔️ Anthropic API Key (console.anthropic.com)
+
+---
+
+## 🚀 Kaise chalayein?
+
+### Step 1 — API Key lagao
+
+`server.js` file kholkar yahan apni key paste karo:
 
 ```js
-const API_KEY = 'your-api-key-here';
+const API_KEY = 'sk-ant-apni-key-yahan-likho';
 ```
 
-**2. Run the server**
+### Step 2 — Server chalao
 
 ```bash
 node server.js
 ```
 
-**3. Open in browser**
+### Step 3 — Browser mein kholo
 
 ```
 http://localhost:3000
 ```
 
-## How It Works
+---
 
-- Server runs on port `3000`
-- Frontend chat is served from `index.html`
-- Messages are sent to `/chat` and forwarded to Claude API
-- API key stays safe on the server side
+## ⚙️ Settings
 
-## Troubleshooting
+| Setting | File | Default |
+|---|---|---|
+| Port | `server.js` | `3000` |
+| Model | `index.html` | `claude-sonnet-4-20250514` |
+| Max Tokens | `index.html` | `1000` |
 
-| Problem | Solution |
-|---|---|
-| Chat not working | Make sure `node server.js` is running |
-| API error | Check your API key is correct |
-| Port in use | Change `3000` to another port like `3001` |
+---
 
-## License
+## 🔧 Problem aa rahi hai?
 
-MIT
+**❌ Chat kaam nahi kar raha**
+→ Terminal mein `node server.js` likho
+
+**❌ API error aa raha hai**
+→ API key check karo `server.js` mein
+
+**❌ Port already in use**
+→ `server.listen(3000)` ko `server.listen(3001)` kar do
+
+**❌ Page load nahi ho raha**
+→ `index.html` aur `server.js` ek hi folder mein hone chahiye
+
+---
+
+## 🔐 API Key Safe Karo
+
+API key directly mat likho — environment variable use karo:
+
+```bash
+# Mac / Linux
+export ANTHROPIC_API_KEY=sk-ant-key-here
+node server.js
+```
+
+```bash
+# Windows
+set ANTHROPIC_API_KEY=sk-ant-key-here
+node server.js
+```
+
+`server.js` mein yeh likhdo:
+
+```js
+const API_KEY = process.env.ANTHROPIC_API_KEY;
+```
+
+---
+
+## 📄 License
+
+Shivam Rajput — Free hai, use karo, share karo!
