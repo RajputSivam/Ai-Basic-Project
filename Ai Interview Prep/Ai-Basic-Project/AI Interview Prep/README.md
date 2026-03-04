@@ -1,6 +1,6 @@
 # 🤖 AI Interview Preparation App
 
-A smart, AI-powered interview preparation tool built with **HTML, CSS, and JavaScript** — powered by **Anthropic Claude API**. Generate real interview questions, detailed answers, constraints, complexity analysis, and follow-up questions in seconds.
+A smart, AI-powered interview preparation tool built with **HTML, CSS, and JavaScript** . Generate real interview questions, detailed answers, constraints, complexity analysis, and follow-up questions in seconds.
 
 ---
 
@@ -173,4 +173,5 @@ This project is licensed under the **Shivam Rajput License**.
 Made with ❤️ using HTML, CSS, JavaScript & Claude AI
 
 > ⭐ Star this repo if you found it helpful!
+
 
