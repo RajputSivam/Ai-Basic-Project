@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PrepAI — Interview Prep</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <div class="logo-mark">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="#e8c97a" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M2 12l10 5 10-5" stroke="#9b7fe8" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M2 17l10 5 10-5" stroke="#4ecdc4" stroke-width="1.8" stroke-linejoin="round" opacity="0.7"/>
+      </svg>
+    </div>
+    <div class="brand">Prep<em>AI</em></div>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <div class="hero-label">AI-Powered Interview Training</div>
+    <h2>Crack Your Next<br><span>Technical Interview</span></h2>
+    <p>Generate expert-level questions with detailed answers, SQL queries, code examples, and complexity analysis — tailored to your stack.</p>
+  </div>
+
+  <div class="sec-head">Choose Topic</div>
+  <div class="topics">
+    <button class="topic-btn active" data-topic="Java">
+      <span class="t-icon">☕</span>
+      <span class="t-name">Java</span>
+      <span class="t-sub">Core Concepts</span>
+    </button>
+    <button class="topic-btn" data-topic="OOPs Java">
+      <span class="t-icon">🧱</span>
+      <span class="t-name">OOPs Java</span>
+      <span class="t-sub">Principles</span>
+    </button>
+    <button class="topic-btn" data-topic="DSA">
+      <span class="t-icon">🌲</span>
+      <span class="t-name">DSA</span>
+      <span class="t-sub">Algorithms</span>
+    </button>
+    <button class="topic-btn" data-topic="DBMS SQL Queries">
+      <span class="t-icon">🗄️</span>
+      <span class="t-name">DBMS</span>
+      <span class="t-sub">SQL & Queries</span>
+    </button>
+    <button class="topic-btn" data-topic="Web Development">
+      <span class="t-icon">🌐</span>
+      <span class="t-name">Web Dev</span>
+      <span class="t-sub">Frontend/Backend</span>
+    </button>
+    <button class="topic-btn" data-topic="System Design">
+      <span class="t-icon">🏗️</span>
+      <span class="t-name">System Design</span>
+      <span class="t-sub">Architecture</span>
+    </button>
+    <button class="topic-btn" data-topic="Python">
+      <span class="t-icon">🐍</span>
+      <span class="t-name">Python</span>
+      <span class="t-sub">Core & Libs</span>
+    </button>
+  </div>
+
+  <div class="sec-head">Difficulty Level</div>
+  <div class="diff-row">
+    <button class="diff-btn easy active" data-diff="Easy">🟢 Easy</button>
+    <button class="diff-btn med"         data-diff="Medium">🟡 Medium</button>
+    <button class="diff-btn hard"        data-diff="Hard">🔴 Hard</button>
+  </div>
+
+  <button class="gen-btn" id="genBtn">
+    <span>⚡</span> Generate Interview Questions
+  </button>
+
+  <div id="output">
+    <div class="empty">
+      <div class="empty-icon">🎯</div>
+      <h2>Ready to Ace Your Interview?</h2>
+      <p>Select a topic & difficulty above, then hit Generate!</p>
+    </div>
+  </div>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
