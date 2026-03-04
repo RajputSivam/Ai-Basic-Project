@@ -96,4 +96,5 @@ const API_KEY = process.env.ANTHROPIC_API_KEY;
 
 ## 📄 License
 
-Shivam Rajput — Free hai, use karo, share karo!
+Shivam Rajput — Free to use and share
+
