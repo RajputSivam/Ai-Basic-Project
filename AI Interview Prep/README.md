@@ -164,7 +164,7 @@ Pull requests are welcome! For major changes, please open an issue first.
 
 ## 📄 License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the **Shivam Rajput License**.
 
 ---
 
@@ -173,3 +173,4 @@ This project is licensed under the **MIT License**.
 Made with ❤️ using HTML, CSS, JavaScript & Claude AI
 
 > ⭐ Star this repo if you found it helpful!
+
