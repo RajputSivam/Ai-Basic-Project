@@ -1,4 +1,4 @@
-const API_KEY = "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";
+const API_KEY = "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";
 
 let topic = "Java";
 let diff  = "Easy";
@@ -195,3 +195,4 @@ document.getElementById('genBtn').addEventListener('click', async () => {
   btn.innerHTML = '<span>⚡</span> Generate Interview Questions';
 
 });
+
