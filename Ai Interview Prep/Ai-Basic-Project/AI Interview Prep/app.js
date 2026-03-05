@@ -173,7 +173,8 @@ document.getElementById('genBtn').addEventListener('click', async () => {
         "X-Title": "AI Interview Prep"
       },
       body: JSON.stringify({
-        model: "openai/gpt-3.5-turbo",
+        // model: "openai/gpt-3.5-turbo",
+        model: "mistralai/mistral-7b-instruct:free",
         max_tokens: 1500,
         messages: [{ role: "user", content: buildPrompt() }]
       })
@@ -195,4 +196,5 @@ document.getElementById('genBtn').addEventListener('click', async () => {
   btn.innerHTML = '<span>⚡</span> Generate Interview Questions';
 
 });
+
 
