@@ -168,7 +168,8 @@ document.getElementById('genBtn').addEventListener('click', async () => {
       headers: {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${API_KEY}`,
-        "HTTP-Referer": "http://localhost:5500",
+        // "HTTP-Referer": "http://localhost:5500",
+        "HTTP-Referer": "https://rajputsivam.github.io",
         "X-Title": "AI Interview Prep"
       },
       body: JSON.stringify({
@@ -192,4 +193,5 @@ document.getElementById('genBtn').addEventListener('click', async () => {
 
   btn.disabled = false;
   btn.innerHTML = '<span>⚡</span> Generate Interview Questions';
+
 });
